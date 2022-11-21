@@ -1,7 +1,323 @@
-<!DOCTYPE html>
 <html>
+<head>
+<style>
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1900px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 2px;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 5;
+  border-radius: 3px 0 0 3px;
+}
+/* Position the "prev button" to the left */
+.prev {
+  right: 1050px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-family: Verdana;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 3px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #41AAC8;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#container {
+width: 1250px;
+height: 2100px;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+background-color: #41AAC8;
+}
+#header {
+width: 90%;
+background-color: white;
+height: 225px;
+color: white;
+text-align: center;
+font-family: Britannic Bold;
+font-size: 35px;
+margin-left: auto;
+margin-right: auto;
+top: 100px;
+}
+#navigation {
+width: 100%;
+background-color: #41AAC8;
+color: white;
+}
+
+#navigation table {
+color: white;
+vertical-align: center;
+font-size: 22px;
+text-align: center;
+font-family: Arial;
+}
+#NAVborder {
+margin-left: auto;
+margin-right: auto;
+}
+#stuff {
+width: 90%;
+background-color: white;
+height: 1850px;
+color: #41AAC8;
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+border: 20px solid;
+border-color: white;
+margin-left: auto;
+margin-right: auto;
+
+}
+#stuff p {
+text-align: center;
+font-size: 40px;
+font-family: Verdana;
+}
+#whatWeDo {
+height: 360px;
+width: 480px;
+position: absolute;
+top: 400px;
+left: 100px;
+}
+whatwedotable {
+margin-left: auto;
+margin-right: auto;
+background-color: blue;
+color: #41AAC8;
+}
+#spotlight {
+background-color: white;
+color: #41AAC8;
+}
+#placeholder {
+top: 1300px;
+}
+#NAVborder td {
+width: 150px;
+text-align: center;
+}
+#feet {
+position: absolute;
+top: 1700px;
+left: 600px;
+}
+#NAVborder a:link {
+text-decoration: none;
+color: white;
+}
+#NAVborder a:visited {
+text-decoration: none;
+color: white;
+}
+#NAVborder a:hover {
+text-decoration: underline;
+color: #41AAC8;
+background-color: white;
+}
+#NAVborder td {
+    overflow: hidden;
+}
+#NAVborder td a {
+    display: block;
+    margin: -10em;
+    padding: 10em;
+}
+</style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<div id="container">
+
+	
+	<div id="header"> <h1><img src = "WROC LOGO.jpg" width="500" height="200"></h1> 
+	  
+		</div>
+	<div id ="navigation">
+    <table id="NAVborder" width="70%" height="45" align="center" cellspacing="0"border="0">
+	 <tr>
+	 <td><a href="index.html">Home</a></td>
+	 <td><a href="WROCinfo.html">WROC</a> </td>
+	  <td><a href="RENEW.html">Re-New</a></td>
+	  <td><a href="Kindness.html">Kindness Cupboard</a></td>
+	  <td><a href="Volunteer.html">Volunteer</a></td>
+	 
+	 </tr>
+	</table>
+	</div>
+		<div id="stuff"> <p>What We Do</p>
+		<table id="whatwedotable" width="100%" cellspacing="0">
+		<tr> <td width="50%"> <img src = "volunteer.jpg" width="450" height="350"> </td>
+		<td width="50%" style="vertical-align: top; font-family: arial; font-size: 22px;" >
+	OUR MISSION: WROC is a faith-based organization 
+		through which women empower women to help those in need.</br> </br>
+		As a non-profit organization of Christian women who desire to give of
+		themselves through service for the good of others. 
+		We want to break down all divisive walls such as age, denomination or
+		race in order to do God’s work where there is need.</td>
+		</tr>
+		</table>
+		<p>Upcoming Events</p>
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 2</div>
+    <img src="wroc slide.png" style="width:100%">
+    <div class="text"> The WROC Main Office</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 2</div>
+    <img src="santaphoto2.png" style="width:100%"></a>
+    <div class="text"></div>
+  </div>
+
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+
+	<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+<br/>
+<br/>
+			<div id ="spotlight"> <p>Monthly Spotlight<p>
+					<table id="placeholder" width="100%" cellspacing="0" border="0">
+		<tr> <td width="30%"> <img src = "santaHelpers.png" width="250" height="250" style="display: block; margin-left:auto;" > </td>
+		<td width="70%" style="vertical-align: top; font-family: arial; font-size: 22px; text-align: left; padding-left: 15px;" >WROC loves its volunteers! The Perry High School FBLA has been active in activities with WROC since 2020. One of the favorites is helping Santa at Re-New each year. Pictured here are FBLA members Kelsie Pugh and Kayla Kennedy helping with Santa last year. <br/><br/>Be sure to join us this year on December 17th from 10AM to 2PM at Re-New!</td>
+		</tr>
+		</table>
+		<p style="text-align: left; margin-left: 200px;">Details</p>
+		
+   <table id="blurb" width="50%" border="0"style="text-align: center;"><tr> <td>
+  <p style="color: black; font-size: 22px;">
+  ADDRESS: 1205 Ball Street<br/>
+Perry, GA 31069<br/><br/>
+Call Us: 478-235-8547<br/></br>
+Office Hours<br/><br/>
+Monday 10-1<br/>
+Tuesday 4-5:30<br/>
+Wednesday 2-5<br/>
+Thursday 4-5:30<br/>
+  <br/><br/>
+
+  </p></table>
+	 <img src="feet.png" width="300" height="300" id="feet">
+</div>
+
+
+
 </body>
 </html>
